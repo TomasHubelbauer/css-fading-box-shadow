@@ -1,0 +1,23 @@
+#shadowDiv {
+}
+
+#scrollDiv {
+    height: 50vh;
+    margin: -1em 0 -1em 0;
+    overflow: auto;
+    text-align: center;
+}
+
+#shadowDiv::before {
+    background: radial-gradient(ellipse at 50% 0, black, transparent, transparent);
+    content: '';
+    height: 1em;
+    display: block;
+}
+
+#shadowDiv::after {
+    background: radial-gradient(ellipse at 50% 100%, black, transparent, transparent);
+    content: '';
+    height: 1em;
+    display: block;
+}
